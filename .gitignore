@@ -56,6 +56,8 @@ conversation-*.txt
 
 # Documentos markdown (planejamento/notas internas — manter local, não publicar)
 *.md
+# ...exceto o README público (só o da raiz):
+!/README.md
 
 # Tudo relacionado ao Claude / assistente (config e notas locais)
 .claude/
