@@ -1,0 +1,51 @@
+# Usado pelo EAS Build NO LUGAR do .gitignore.
+# Espelha o .gitignore, MAS de propósito NÃO ignora firebase/google-services.json
+# nem GoogleService-Info.plist: assim o EAS empacota esses arquivos do disco
+# local (eles continuam fora do git / do GitHub público, mas o build funciona).
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native (prebuild roda na nuvem — não subir as pastas nativas geradas)
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+firebase-debug.log
+.firebase/
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# notas locais / testes
+conversation-*.txt
+
+# NÃO ignorar aqui (necessários no build, lidos do disco):
+#   firebase/google-services.json
+#   firebase/GoogleService-Info.plist
